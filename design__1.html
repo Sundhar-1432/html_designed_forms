@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images\face_book img.png" type="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>form</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(200, 161, 237);
+
+        }
+        .main{
+            
+            width: 500px;
+            height: 350px;
+            border: solid rgb(17, 17, 17);
+            border-radius: 6px;
+            margin: 20% 30% 30% 30%;
+            box-shadow: 0 10px 90px 10px;
+            
+        
+        }
+        .left{
+            float: left;   
+            width: 50%;
+            height: 100%;
+            background-image:url('images/img1.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+            
+            
+            
+           
+        }
+        .right{
+            background-color: rgb(0, 0, 0);
+            width: 50%;
+            height: 100%;
+            float: right;
+            background-color: black;
+
+        }
+        form{
+            margin-right: 15px;
+            margin-left: 30px;
+            
+        }
+        form input{
+            background-color: black;
+            margin: 4px 0 13px ;
+            width: 160px;
+            border-radius: 3px;
+            border-bottom: unset white;
+            border-top: solid rgb(0, 0, 0);
+            border-left:solid rgb(5, 1, 1);
+            border-right:solid rgb(5, 1, 1);
+            padding: 3px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+        }
+        .se{
+            width: 160px;
+            background-color: black;
+            color: aliceblue;
+
+        }
+        .h{
+            color: aliceblue;
+        }
+        .btn{
+            width: 100px;
+            border:lightblue ;
+            border-radius: 9px;
+            background-color: rgb(111, 184, 3);
+            color: aliceblue;
+            margin-top: 9px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right">
+            <form action="">
+                <h2 class="h">Registration form</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="datetime" placeholder="birthdate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <select class="se">
+                                <option name="name">gender</option>
+                                <option name="name">male</option>
+                                <option name="name">female</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" placeholder="number">
+    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="btn" type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
